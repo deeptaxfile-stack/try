@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="readAll()">
+    <h1><b>todos</b></h1>
+
+    <div class="container">
+        <div>
+            <form action="" class="create_form">
+  <input type="text" placeholder="enter your todo" name="task" class="name" />
+  <button type="button" onclick="create()" class="btn">Create</button>
+</form>
+
+<form action="" class="update_form" style="display:none">
+  <input type="text" placeholder="enter updated todo" name="task" class="name" />
+  <button type="button" onclick="update()" class="btn">Update</button>
+</form>
+
+            <table>
+                <thead>
+                    <th>Todo</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody class="table_data">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
